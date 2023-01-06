@@ -1,0 +1,121 @@
+/************************* body *************************/
+
+body {
+  display: grid;
+  background-color: rgb(209, 240, 240);
+}
+main {
+  max-width: 1600px;
+  margin-inline: auto;
+}
+/************* Forside *************/
+
+@media (min-width: 800px) {
+  section.grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 40px;
+}
+
+.grid_1-2 img {
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.line {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+.klip {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+}
+.symaskine {
+  grid-column: 3 / span 2;
+  grid-row: 2 / span 1;
+}
+
+/************* Video *************/
+@media (min-width: 800px) {
+  .centrer {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+  }
+  .box2 {
+    text-align: center;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    background-color: rgba(0, 183, 255, 0.14);
+    padding: 45px 60px;
+    margin: 40px 10px;
+  }
+
+  .medvirkende {
+    margin: 10px;
+  }
+
+  .grid_3-1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .grid_2-2 {
+    display: grid;
+  }
+
+  #box1 {
+    max-width: 1300px;
+  }
+
+  video {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+  }
+
+  .iframe-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+
+    padding-top: 56.25%;
+  }
+
+  iframe {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+  }
+  /************* Layoutdiagram *************/
+
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 100px;
+    margin: 100px 40px 0px 40px;
+  }
+
+  .layout1 {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+  .layout2 {
+    grid-column: 2;
+    grid-row: 1 / 2;
+  }
+  .layout3 {
+    grid-column: 3;
+    grid-row: 2/1;
+  }
+}
